@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create account | EduTrack Plus</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth-pages.css">
+  <script src="js/register.js" defer></script>
+  <link rel="stylesheet" href="css/style.css"
+  <link rel="stylesheet" href="css/auth-pages.css">
+  <script src="js/register.js" defer></script>
+</head>
+<body>
+  <main class="auth-page">
+    <section class="auth-card">
+      <a class="auth-brand" href="index.html">EduTrack <span>Plus</span></a>
+      <p class="auth-kicker">ACCOUNT REGISTRATION</p>
+      <h1>Create your account</h1>
+      <p class="auth-intro">Enter your school details. We'll send a verification code to your email.</p>
+
+      <form id="registerForm" novalidate>
+        <div class="form-grid">
+          <label>First name
+            <input id="firstName" name="firstName" autocomplete="given-name" maxlength="80" required>
+          </label>
+          <label>Last name
+            <input id="lastName" name="lastName" autocomplete="family-name" maxlength="80" required>
+          </label>
+          <label class="full-width">Email address
+            <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+          </label>
+          <label class="full-width">Address
+            <input id="address" name="address" autocomplete="street-address" maxlength="255" required>
+          </label>
+          <label>School ID number
+            <input id="schoolId" name="schoolId" autocomplete="username" maxlength="40" required>
+          </label>
+          <label>Course and year
+            <input id="courseYear" name="courseYear" maxlength="100" placeholder="e.g. ICT, Grade 11">
+          </label>
+          <label class="full-width">Account role
+            <select id="role" name="role" required>
+              <option value="student">Student</option>
+              <option value="professor">Professor</option>
+              <option value="school_admin">School Admin (approval required)</option>
+            </select>
+          </label>
+          <label class="full-width">Password
+            <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" maxlength="50" required>
+            <small>8–50 characters, with uppercase, lowercase, and at least one symbol.</small>
+          </label>
+          <label class="full-width" id="adminInviteWrap" hidden>School Admin invite code
+            <input id="adminInviteCode" name="adminInviteCode" autocomplete="off">
+          </label>
+        </div>
+        <p id="formMessage" class="form-message" role="status" aria-live="polite"></p>
+        <button class="auth-submit" type="submit">Create account</button>
+      </form>
+      <p class="auth-bottom">Already registered? <a href="login.html">Sign in</a></p>
+    </section>
+  </main>
+</body>
+</html>

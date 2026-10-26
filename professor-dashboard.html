@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Professor Dashboard | EduTrack Plus</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/auth-pages.css">
+  <script src="js/role-dashboard.js" defer></script>
+</head>
+<body>
+  <main class="auth-page dashboard-page" data-required-role="professor">
+    <section class="auth-card">
+      <a class="auth-brand" href="index.html">EduTrack <span>Plus</span></a>
+      <p class="auth-kicker">PROFESSOR DASHBOARD</p>
+      <h1>Welcome, <span data-user-name>loading account…</span></h1>
+      <p class="auth-intro">Your professor account is signed in. Class tools and student-related features can be added here.</p>
+      <div class="dashboard-info">
+        <p><strong>School ID</strong><span data-user-school-id>—</span></p>
+        <p><strong>Account role</strong><span>Professor</span></p>
+      </div>
+      <p id="dashboardStatus" data-dashboard-status class="form-message" role="status" aria-live="polite">Loading your account…</p>
+      <button class="auth-submit" type="button" data-logout>Sign out</button>
+    </section>
+  </main>
+</body>
+</html>
